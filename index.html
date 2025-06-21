@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WordSkills</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <!--Logo da empresa-->
+        <img src="assets/images/logos/Logo.svg" alt="Logo" class="logo">
+        <a href=""></a>
+        <!-- Botão hamburguer -->
+        <span class="whiteLine">.</span>
+    </header>
+    <nav>
+        <div class="menu-btn" onclick="toggleMenu()" id="menuBtn">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </nav>
+    
+    <aside>
+        <menu>
+            <!-- Menu lateral -->
+            <nav class="sidebar" id="sidebar">
+                <a href="#features-section">Features</a>
+                <a href="#sobre-section">Sobre a empresa</a>
+                <a href="#jogos-section">Jogos</a>
+                <a href="#rankings-section">Rankings</a>
+                <a href="#perfil-section">Perfil</a>
+                <a href="#versoes-section">Versões</a>
+            </nav>
+        </menu>
+    </aside>
+
+    <!-- Conteúdo principal -->
+    <main class="main-content" >
+        <section id="features-section">
+            <h1 class="title">Features</h1>
+
+            <span class="whiteLineGradient">.</span>
+
+            <div class="tabs">
+                <button class="tab-button jogos active" onclick="showTab('jogos')">Jogos</button>
+                <button class="tab-button rankings" onclick="showTab('rankings')">Rankings</button>
+                <button class="tab-button perfil" onclick="showTab('perfil')">Perfil</button>
+                <button class="tab-button versoes" onclick="showTab('versoes')">Versoes</button>
+            </div>
+            <div id="jogos" class="tab-content active">
+                <div class="feature-text">
+                    <h2 class="feature-title">Jogos</h2>
+                    <p>
+                        Ut felis purus, dictum in dui ut, dignissim varius mauris. Quisque a ante vitae nulla interdum placerat. Morbi aliquam ut urna eget  luctus. Pellentesque laoreet lobortis condimentum. Praesent id pharetra mauris, et euismod lectus. Suspendisse quam eros, pharetra quis egestas sit amet, placerat dapibus odio. Integer vel augue eget magna sodales feugiat. Maecenas sed nunc non orci tincidunt pulvinar. Nam congue sed turpis rutrum auctor. Nulla pellentesque lacinia maximus. Morbi aliquam, nunc at finibus gravida, nibh quam suscipit sapien, sed ornare orci orci ac massa. Donec id diam vel ipsum semper aliquam. Praesent ac purus quis mauris suscipit eleifend sed vel ex. Aenean consequat mauris erat, eu bibendum massa pretium et. Phasellus gravida, augue at condimentum iaculis, leo nisi fermentum nunc, sed blandit diam ex et turpis.
+                    </p>
+                </div>
+                <div class="feature-image-container">
+                    <img src="assets/images/features/Jogos.jpg" alt="Jogos" class="feature-image">
+                </div>
+            </div>
+            <div id="rankings" class="tab-content">
+                <div class="feature-text">
+                    <h2 class="feature-title">Rankings</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget lacus eget ligula dapibus condimentum in a mauris. Praesent venenatis gravida ultricies. Aenean maximus ante velit, vitae eleifend massa malesuada et. In varius velit non accumsan tristique. Donec a metus non purus congue tincidunt. Vivamus viverra ex nec mi convallis feugiat. Donec lacinia et tortor id porta. Sed lacinia arcu lorem, ac vulputate mi finibus id.
+                    </p>
+                </div>
+                <div class="feature-image-container">
+                    <img src="assets/images/features/Rankings.jpg" alt="Rankings" class="feature-image">
+                </div>
+            </div>
+            <div id="perfil" class="tab-content">
+                <div class="feature-text">
+                    <h2 class="feature-title">Perfil</h2>
+                    <p>
+                        Nulla bibendum id sapien a euismod. Fusce eu augue felis. Aenean sollicitudin sagittis erat, ac porttitor nulla consequat sed. Curabitur et fermentum metus. Sed non neque vitae sem cursus finibus eget id orci. Ut cursus volutpat cursus. Aliquam vitae ex a urna lobortis rhoncus. Vivamus semper ipsum sed pellentesque ultricies. Etiam eu orci turpis. Curabitur quam metus, eleifend sollicitudin augue in, suscipit fringilla leo. Duis consectetur sed odio et vulputate. Vestibulum pellentesque, diam eget imperdiet suscipit, augue sapien venenatis purus, ac lacinia nunc sem ut tortor.
+                    </p>
+                </div>
+
+                <div class="feature-image-container">
+                    <img src="assets/images/features/Perfil.jpg" alt="Perfil" class="feature-image">
+                </div>
+
+            </div>
+            <div id="versoes" class="tab-content">
+                <div class="feature-text">
+                    <h2 class="feature-title">Versões</h2>
+                    <p>
+                       Nulla iaculis dolor sed nisi egestas cursus. Nullam laoreet mauris mauris, ut hendrerit est lacinia molestie. Etiam vel volutpat risus, ut fermentum nisl. Nullam scelerisque eros non purus iaculis, fringilla vehicula nunc tincidunt. Nunc euismod nunc id enim dapibus, ac pharetra lacus consequat. Pellentesque ac aliquam massa, vel efficitur quam. In hac habitasse platea dictumst. Aenean vitae velit eu lorem pulvinar efficitur. Nam hendrerit tincidunt elementum. Phasellus vel lorem turpis. Pellentesque molestie ligula ex, ac aliquam ex mattis sed.
+                    </p>
+                </div>
+
+                <div class="feature-image-container">
+                    <img src="assets/images/features/Versões.jpg" alt="Versoes" class="feature-image">
+                </div>
+
+            </div>
+        </section>
+
+        <h2 class="title">Sobre a empresa</h2>
+        <span class="whiteLineGradient">.</span>
+
+        <section class="section-sobre" id="sobre-section">
+            <div  class="logo-sobre">
+                 <img src="assets/images/logos/Logo.png" alt="Logo">
+            </div>
+       
+            <p class="text-sobre">A P-Media está desenvolvendo uma plataforma de jogos web, onde os jogadores poderão se reunir para jogar seus games preferidos. Será um plataforma com foco em compartilhar jogos, trocar experiências e auxiliar a comunidade de games a crescer.</p>
+        </section>
+
+        <h2 class="title">Jogos</h2>
+        <span class="whiteLineGradient">.</span>
+
+        <section class="section-jogos" id="jogos-section">
+            <div class="game-card">
+                <div class="demo-game"></div>
+                <div class="card-content">
+                    <h3>Demo Game</h3>
+                    <p>Fusce vel lorem imperdiet turpis aliquam vestibulum sit amet non nunc. Donec vel ipsum varius, egestas sem vitae, faucibus neque. Morbi fringilla ipsum eget ligula bibendum, in tempor magna egestas. Etiam ac commodo nulla. Aliquam ac nisl vel nisi varius hendrerit. Etiam at luctus arcu. Integer non laoreet mauris. Duis eu sapien malesuada, fringilla sapien eu, facilisis felis. Vivamus posuere gravida orci, sit amet aliquet augue commodo eget.</p>
+                </div>
+            </div>
+
+             <div class="game-card">
+                <div class="demo-game2"></div>
+                <div class="card-content">
+                    <h3>Demo Game II</h3>
+                    <p>Donec at lectus convallis, semper mauris vitae, congue nisl. Sed consequat magna velit. Pellentesque tincidunt ex a enim gravida dictum. Mauris quis augue sodales, vestibulum odio vel, convallis orci. Curabitur luctus suscipit enim, vitae fringilla metus pretium eget. Fusce dictum eros vel posuere suscipit. Fusce eget ultricies lectus. Cras non turpis eros.</p>
+                </div>
+            </div>
+
+             <div class="game-card">
+                <div class="demo-game-remastered"></div>
+                <div class="card-content">
+                    <h3>Demo Game Remastered</h3>
+                    <p>Vestibulum eu feugiat urna. Mauris vel tincidunt lectus, ac ultricies est. Morbi sit amet sem auctor, dictum odio et, dapibus lectus. Cras sit amet sollicitudin ipsum. Aenean sit amet erat risus. Suspendisse faucibus ligula at lacus tristique, et ultrices ipsum commodo. Fusce posuere vel turpis eget porta. Nulla lacinia elit id vehicula egestas. Etiam hendrerit est non aliquet euismod. Curabitur a egestas mi. Sed congue commodo tincidunt.</p>
+                </div>
+            </div>
+
+             <div class="game-card">
+                <div class="demo-game-finale"></div>
+                <div class="card-content">
+                    <h3>Demo Game III: Finale</h3>
+                    <p>Integer hendrerit leo sit amet lacus placerat, a mattis tellus accumsan. Pellentesque imperdiet mi nulla, at laoreet leo dignissim et. Integer euismod ullamcorper mauris. Duis id nisi eget orci sodales commodo non vitae mauris. Fusce lobortis eros eu viverra sollicitudin. Maecenas cursus fermentum ex eu finibus. Donec non nisl vitae nibh pellentesque vestibulum facilisis sed odio. Mauris vestibulum nisi a dictum ornare.</p>
+                </div>
+            </div>
+
+            <button class="game-button">Ver Mais</button>
+        </section>
+
+        <h2 class="title">Rankings</h2>
+        <span class="whiteLineGradient">.</span>
+
+        <section id="rankings-section">
+            <table id="ranking-table">
+                <thead>
+                    <tr class="table-header">
+                        <th class="header-pos text-table-header ">Pos.</th>
+                        <th class="header-player text-table-header"></th>
+                        <th class="text-table-header">Data</th>
+                        <th class="text-table-header">Pontos</th>
+                        <th class="text-table-header">Jogo</th>
+                    </tr>
+                </thead>
+                <tbody class="table-body">
+                    <tr>
+                        <td class="table-number">1</td>
+                        <td>
+                            <div class="table-pos">
+                                <img src="assets/images/rankings/Profile.png" alt="Profile" class="first-image-profile"><span>Tee</span>
+                            </div>
+                        </td>
+                        <td>07/01/2023</td>
+                        <td>20.000pts</td>
+                        <td>Demo Game</td>
+                    </tr>
+                    <tr>
+                        <td class="table-number">2</td>
+                        <td class="table-pos"><img src="assets/images/rankings/Profile.png" alt="Profile" class="image-profile"> TeeAyEe</td>
+                        <td>08/08/2022</td>
+                        <td>18.000pts</td>
+                        <td>Demo Game</td>
+                    </tr>
+                    <tr>
+                        <td class="table-number">3</td>
+                        <td class="table-pos"><img src="assets/images/rankings/Profile.png" alt="Profile" class="image-profile"> Tamie</td>
+                        <td> 09/08/2022</td>
+                        <td>16.000pts</td>
+                        <td>Demo Game</td>
+                    </tr>
+                    <tr>
+                        <td class="table-number">4</td>
+                        <td class="table-pos"><img src="assets/images/rankings/Profile.png" alt="Profile" class="image-profile"> Tambob</td>
+                        <td>22/10/2022</td>
+                        <td>14.000pts</td>
+                        <td>Demo Game</td>
+                    </tr>
+                    <tr>
+                        <td class="table-number">5</td>
+                        <td class="table-pos"><img src="assets/images/rankings/Profile.png" alt="Profile" class="image-profile"> Treacherous Tam</td>
+                        <td>22/10/2022</td>
+                        <td>15.000pts</td>
+                        <td>Demo Game</td>
+                    </tr>
+                    <tr>
+                        <td class="table-number">6</td>
+                        <td class="table-pos"><img src="assets/images/rankings/Profile.png" alt="Profile" class="image-profile"> AreEnEff</td>
+                        <td>07/06/2022</td>
+                        <td>10.000pts</td>
+                        <td>Demo Game</td>
+                    </tr>
+                    <tr>
+                        <td class="table-number">7</td>
+                        <td class="table-pos"><img src="assets/images/rankings/Profile.png" alt="Profile" class="image-profile"> Nigelster</td>
+                        <td>06/06/2022</td>
+                        <td>9.500pts</td>
+                        <td>Demo Game</td>
+                    </tr>
+                    <tr >
+                        <td class="table-number">8</td>
+                        <td class="table-pos"><img src="assets/images/rankings/Profile.png" alt="Profile" class="image-profile"> Ryan-nova </td>
+                        <td>15/01/2023</td>
+                        <td>8.000pts</td>
+                        <td>Demo Game</td>
+                    </tr>
+                    <tr >
+                        <td class="table-number">9</td>
+                        <td class="table-pos"><img src="assets/images/rankings/Profile.png" alt="Profile" class="image-profile"> Ryanbob </td>
+                        <td>09/01/2023</td>
+                        <td>7.980pts</td>
+                        <td>Demo Game</td>
+                    </tr>
+                    <tr >
+                        <td class="table-number">10</td>
+                        <td class="table-pos"><img src="assets/images/rankings/Profile.png" alt="Profile" class="image-profile"> Ratty Ryan </td>
+                        <td>09/01/2003</td>
+                        <td>7.500pts</td>
+                        <td>Demo Game</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <h2 class="title">Perfil</h2>
+        <span class="whiteLineGradient">.</span>
+
+        <section id="perfil-section">
+            <div class="perfil-container">
+                <article class="perfil-text">
+                    <p>
+                        Nulla vitae erat interdum, sodales eros eu, varius mi. In eget lectus facilisis, ullamcorper diam ut, malesuada tortor. Morbi at ligula ut augue semper pharetra quis non lorem. Ut vulputate mollis nulla, nec lobortis quam malesuada eu. Quisque ut nibh massa. 
+                    </p>
+                </article>  
+                <div class="perfil-card">
+                    <div class="container-player">
+                        <div class="card-perfil-img"> <img src="assets/images/perfil/Player.png" alt="player-img" class="perfil-img"></div>
+                        <div class="player-info">
+                            <p class="title-player">User
+                               <span class="nick-player">nick</span>
+                            </p>
+                            <p class="title-player">Pontos Totais:
+                                <span class="score-player">1M</span>
+                            </p>
+                        </div>
+                        <div class="listing-rankings-player">
+                            <h3>Aparece nos rankings de...</h3>
+                            <span class="whiteFineLine">.</span>
+                            <p>Demo Game</p>
+                            <p>Demo Game II</p>
+                            <p>Demo Game III:Finale</p>
+                        </div> 
+                    </div>
+                    <div class="container-wave-animation">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                    <div class="player-graph">
+                        <h4 class="title-graph">Genêros mais jogados</h4>
+
+                        <div class="grafico-legenda">
+                            <svg viewBox="0 0 32 32" class="pie">
+                                <!-- RPG - 50% -->
+                                <circle r="16" cx="16" cy="16" fill="transparent" stroke="#17C69B" stroke-width="32"
+                                stroke-dasharray="50 50" stroke-dashoffset="0" />
+                                <!-- Roguelike - 30% -->
+                                <circle r="16" cx="16" cy="16" fill="transparent" stroke="#FDA543" stroke-width="32"
+                                stroke-dasharray="30 70" stroke-dashoffset="-50" />
+                                <!-- Outros - 20% -->
+                                <circle r="16" cx="16" cy="16" fill="transparent" stroke="#FA2F75" stroke-width="32"
+                                stroke-dasharray="20 80" stroke-dashoffset="-80" />
+                            </svg>
+    
+                            <div class="caption">
+                                <div><span class="color" style="background:#17C69B"></span> RPG</div>
+                                <div><span class="color" style="background:#FDA543"></span> Roguelike</div>
+                                <div><span class="color" style="background:#FA2F75"></span> Outros</div>
+                            </div>
+                        </div>
+
+                        <h4 class="title-graph">Minutos jogados: 12.000</h4>
+
+                    </div>
+                </div>         
+            </div>
+        </section>
+
+        <h2 class="title">Versões</h2>
+        <span class="whiteLineGradient">.</span>
+
+        <section id="versoes-section">
+            <div class="buttons-versoes">
+                <div class="btn-img demo-game active" id="demo-game" onclick="showTabVersoes('demo-game', 'tab1')"></div>
+                <div class="btn-img demo-game2" id="demo-game2" onclick="showTabVersoes('demo-game2', 'tab2')"></div>
+                <div class="btn-img demo-game-remastered" id="demo-game-remastered" onclick="showTabVersoes('demo-game-remastered', 'tab3')"></div>
+                <div class="btn-img demo-game-finale" id="demo-game-finale"  onclick="showTabVersoes('demo-game-finale', 'tab4')"></div>
+            </div>
+
+            <table class="tabVersoes active" id='tab1'>
+                <thead>
+                    <th class="title-tab-game">Demo game</th>
+                    <th class="data-tab-game">Data</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="version-number">V1 <span class="dotted-line">_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</span></td>
+                        <td class="version-data">22/10/2010</td>
+                    </tr>
+                    <tr>
+                        <td class="version-number">V2 <span class="dotted-line">_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</span></td>
+                        <td class="version-data">22/04/2011</td>
+                    </tr>
+                    <tr>
+                         <td class="version-number">V3 <span class="dotted-line">_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</span></td>
+                        <td class="version-data">22/10/2011</td>
+                    </tr>
+                    <tr>
+                         <td class="version-number">V4  <span class="dotted-line">_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</span></td>
+                        <td class="version-data">22/04/2012</td>
+                    </tr>
+                    <tr>
+                         <td class="version-number">V5  <span class="dotted-line">_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</span> </td>
+                        <td class="version-data">22/10/2012</td>
+                    </tr>
+                    <tr>
+                         <td class="version-number">V6  <span class="dotted-line">_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</span> </td>
+                        <td class="version-data">22/04/2013</td>
+                    </tr>
+                    <tr>
+                         <td class="version-number">V7  <span class="dotted-line">_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</span> </td>
+                        <td class="version-data">22/10/2013</td>
+                    </tr>
+                    <tr>
+                         <td class="version-number">V8  <span class="dotted-line">_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</span></td>
+                        <td class="version-data">22/04/2014</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="tabVersoes" id="tab2">
+                <thead>
+                    <th class="title-tab-game">Demo game II</th>
+                    <th class="data-tab-game">Data</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="version-number">V1 <span class="dotted-line">_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</span></td>
+                        <td class="version-data">22/04/2016</td>
+                    </tr>
+                    <tr>
+                        <td class="version-number">V2 <span class="dotted-line">_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</span></td>
+                        <td class="version-data">22/10/2016</td>
+                    </tr>
+                    <tr>
+                         <td class="version-number">V3 <span class="dotted-line">_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</span></td>
+                        <td class="version-data">22/04/2017</td>
+                    </tr>
+                    <tr>
+                         <td class="version-number">V4  <span class="dotted-line">_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</span></td>
+                        <td class="version-data">22/10/2017</td>
+                    </tr>
+                    <tr>
+                         <td class="version-number">V5  <span class="dotted-line">_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</span> </td>
+                        <td class="version-data">22/04/2018</td>
+                    </tr>
+                    <tr>
+                         <td class="version-number">V6  <span class="dotted-line">_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</span> </td>
+                        <td class="version-data">22/10/2018</td>
+                    </tr>
+                    <tr>
+                         <td class="version-number">V7  <span class="dotted-line">_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</span> </td>
+                        <td class="version-data">22/04/2019</td>
+                    </tr>
+                    <tr>
+                         <td class="version-number">V8  <span class="dotted-line">_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</span></td>
+                        <td class="version-data">22/10/2019</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="tabVersoes" id="tab3">
+                <thead>
+                    <th class="title-tab-game">Demo game: Remastered</th>
+                    <th class="data-tab-game">Data</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="version-number">V1 <span class="dotted-line">_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</span></td>
+                        <td class="version-data">22/04/2020</td>
+                    </tr>
+                    <tr>
+                        <td class="version-number">V2 <span class="dotted-line">_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</span></td>
+                        <td class="version-data">22/06/2020</td>
+                    </tr>
+                    <tr>
+                         <td class="version-number">V3 <span class="dotted-line">_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</span></td>
+                        <td class="version-data">22/08/2020</td>
+                    </tr>
+                    <tr>
+                         <td class="version-number">V4  <span class="dotted-line">_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</span></td>
+                        <td class="version-data">22/10/2020</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="tabVersoes" id="tab4">
+                <thead>
+                    <th class="title-tab-game">Demo game III: Finale</th>
+                    <th class="data-tab-game">Data</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="version-number">V1 <span class="dotted-line">_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</span></td>
+                        <td class="version-data">22/04/2021</td>
+                    </tr>
+                    <tr>
+                        <td class="version-number">V2 <span class="dotted-line">_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</span></td>
+                        <td class="version-data">22/10/2021</td>
+                    </tr>
+                    <tr>
+                         <td class="version-number">V3 <span class="dotted-line">_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</span></td>
+                        <td class="version-data">22/04/2022</td>
+                    </tr>
+                    <tr>
+                         <td class="version-number">V4  <span class="dotted-line">_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</span></td>
+                        <td class="version-data">22/10/2022</td>
+                    </tr>
+                    <tr>
+                         <td class="version-number">V5  <span class="dotted-line">_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</span> </td>
+                        <td class="version-data">22/04/2023</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+        <div class="whiteFineLineFooter">.</div>
+    <footer class="footer">
+        
+        <span>Termos e condições</span>
+        <span class="border-decoration">P-Media &copy 2022</span>
+        <span>Políticas de Privacidade</span>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
