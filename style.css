@@ -1,4 +1,4 @@
-@font-face {
+@font-face { /*Seta as fontes padrão da página*/
   font-family: 'Biryani-Bold';
   src: url('./assets/Fonts/Biryani/Biryani-Bold.ttf') format('truetype');
   font-weight: normal;
@@ -33,7 +33,7 @@
   font-style: normal;
 }
 
-:root{
+:root{/*Seta as cores padrão da página*/
   --default-dark-blue: #13141A;
   --default-pink: #FA2F75;
   --default-orange: #FB3640;
@@ -42,31 +42,30 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth;/*faz a rolagem da página atráves de links ficar mais suave*/
 }
 
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: var(--default-dark-blue);
+  background-color: var(--default-dark-blue);/*Seta a cor jogada na variável*/
   color: white;
 }
 
 header{
-  position: sticky;
-  top: 0;
-  left: 0;
+  position: sticky;/*Ele é uma mistura de relative e fixed, funciona como relative até alcançar o ponto definido top: 0 Depois, se comporta como fixed, grudando na posição indicada enquanto o usuário continua rolando a página. */
+  top: 0;/*Define a distância entre o elemento até o topo da tela ou contêiner*/
+  left: 0;/*Define a distância entre o elemento até o lado esquerdo da tela ou contêiner*/
   width: 100%;
   background-color: var(--default-dark-blue);
-  z-index: 1000; /* para ficar acima de outros elementos */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* opcional: sombreamento */
+  z-index: 1000; /*Define a ordem de empilhamento dos elementos da página, a profundidade deles, o eixo-z, ou seja, esta propriedade garante que o header ficará acima de todos os elementos da página*/
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /*Sombreamento do elemento*/
   padding: 0;
 }
 
 section {
-  scroll-margin-top: 330px; /* mesmo tamanho (ou mais) que seu header */
+  scroll-margin-top: 330px;/*Define uma margem superior de rolagem extra, qunando um elemento é trazido até a tela por uma rolagem automática, neste caso por links*/
 }
-
 
 .logo{
   padding-left: 15%;
@@ -74,35 +73,34 @@ section {
   width: 300px;
 }
 
-/* Botão hamburguer */
 .menu-btn {
-  position: fixed;
+  position: fixed;/*Define que o elemento fique fixo na tela, independente de sua rolagem */
   top: 40px;
   right: 300px;
   width: 75px;
   height: 70px;
   cursor: pointer;
-  z-index: 9999;
+  z-index: 1100;/*Define que o elemento fique acima dos elementos da página */
 }
 
 .menu-btn div {
   background-color: white;
   height: 3px;
   margin: 15px 0;
-  transition: 0.4s;
+  transition: 0.4s;/*Define uma animação suave entrte os estados do elemento */
 }
 
 /* Animação para virar um X */
 .menu-btn.active .bar1 {
-  transform: rotate(45deg) translate(20px, 20px);
+  transform: rotate(45deg) translate(20px, 20px);/*Ao ganhar a propriedade active, a barra número 1 faz uma rotação de 45 graus no sentido horário, também movendo o elemento 20 pixels á direita e 20 pixels para baixo*/
 }
 
 .menu-btn.active .bar2 {
-  opacity: 0;
+  opacity: 0;/*Totalmente transparente no valor 0, e visivel no valor 1*/
 }
 
 .menu-btn.active .bar3 {
-  transform: rotate(-45deg) translate(6px, -6px);
+  transform: rotate(-45deg) translate(6px, -6px);/*Ao ganhar a propriedade active, a barra número 3 faz uma rotação de 45 graus no sentido anti-horário, também movendo o elemento 6 pixels á direita e 6 pixels para cima*/
 }
 
 .whiteLine{
@@ -112,29 +110,26 @@ section {
   width: 100%;
 }
 
-/* Menu lateral */
 .sidebar {
-  font-family: Biryani-light;
-  display: flex;
-  flex-direction: column;
+  font-family: Biryani-light;/*Fonte setada*/
+  display: flex;/*Flexível*/
+  flex-direction: column;/*Direção dos elementos em forma de coluna*/
   position: fixed;
-  right: -50%;
+  right: -50%;/*Posiciona a sidebar fora da tela, deslocando 50% a direita*/
   top: 0;
   width: 50%;
   height: 100%;
   padding-top: 60px;
-  transition: 0.3s;
   z-index: 1000;
   box-shadow: 2px 0 5px rgba(0,0,0,0.5);
   border-left: #ffffff 7px solid;
   background-color: var(--default-dark-blue);
-  justify-content: center;
-  align-items: center;
-  transition: all 0.8s;
+  justify-content: center;/*Alinha o conteúdo horizontalmente ao centro do container Flexível*/
+  align-items: center;/* Alinha o conteúdo verticalmente ao centro do container */
+  transition: all 0.8s;/*Transição suave*/
 }
 
 .sidebar a {
-  /*display: block;*/
   padding: 15px 20px;
   color: white;
   text-decoration: none;
@@ -164,7 +159,7 @@ section {
 
 .whiteLineGradient {
   display: block;
-  background: linear-gradient(to right, #ffffff, var(--default-dark-blue) );
+  background: linear-gradient(to right, #ffffff, var(--default-dark-blue) );/* Aplica uma cor gradiente */
   font-size: 3px;
   margin-bottom: 20px;
 }
@@ -181,7 +176,7 @@ section {
   height: 35px;
   padding: 5px;
   margin-right: 15px;
-  cursor: pointer;
+  cursor: pointer;/* Quando o mouse é passado acima do botão, ele fica como um ponteiro */
   text-align: center;
   border-top-right-radius : 15px;
   border-top-left-radius : 15px;
@@ -193,19 +188,19 @@ section {
 }
 
 .tab-content {
-  display: none;
+  display: none;/*esconde o conteúdo da página */
   padding: 0;
   background-color: var(--default-green);
   color: black;
-  border-radius: 0px 15px 15px 15px;
+  border-radius: 0px 15px 15px 15px;/*Borda arredondada do elemento*/
   margin-bottom: 2%;
   height: 350px;
 }
 
 .tab-content.active {
-  display: flex;
+  display: flex;/*Elementos flexíveis*/
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: flex-end;/*Elementos alinhados iniciando pelo final do contêiner*/
 }
 
 .tab-button:hover{
@@ -243,15 +238,19 @@ section {
 .tab-button.active{
   color: var(--default-dark-blue);
 }
+
 .tab-button.jogos.active {
   background-color: var(--default-yellow);
 }
+
 .tab-button.tab-button.rankings.active {
   background-color: var(--default-green);
 }
+
 .tab-button.perfil.active {
   background-color: var(--default-orange);
 }
+
 .tab-button.versoes.active {
   background-color: var(--default-pink);
 }
@@ -259,12 +258,15 @@ section {
 .tab-content.active#jogos {
   background-color: var(--default-yellow);
 }
+
 .tab-content.active#rankings {
   background-color: var(--default-green);
 }
+
 .tab-content.active#perfil {
   background-color: var(--default-orange);
 }
+
 .tab-content.active#versoes {
   background-color: var(--default-pink);
 }
@@ -283,10 +285,10 @@ section {
 }
 
 .feature-image-container{
-  position: relative;
+  position: relative;/*Permite que voce posicione os elementos filhos com position absolute, relativamente a esse seu pai*/
   width: 35%;
   height: 100%;
-  overflow: hidden;
+  overflow: hidden;/*Esconde qualquer conteúdo que vaze do seu elemento pai*/
   margin-bottom: 20px;
   border-radius: 0px 15px 15px 0px;
 }
@@ -295,14 +297,14 @@ section {
   position: absolute;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  transform: translateX(-50%);
-  animation: slideIn 0.5s ease-out forwards;
+  object-fit: cover;/*Faz com que o conteúdo preencha toda a área do contêiner, cortando as partes que ultrapassam, mantendo a proporção da imagem.*/
+  transform: translateX(-50%);/*Move o elemento horizontalmente para a esquerda em 50% da sua própria largura.*/
+  animation: slideIn 0.5s ease-out forwards;/*Chama a animação setada, sua duração, função de tempo que faz a animação começar mais rápida e desacelerar no final, criando um efeito mais natural e mantém o estado final da animação depois que ela termina (não volta para o estado inicial*/
 }
 
 @keyframes slideIn {
   from {
-    transform: translateX(15%) ;
+    transform: translateX(15%);/*Animação para mover o elemento no eixo x(direita e esquerda) para a sua posição padrão*/
   }
   to {
     transform: translateX(0%) ;
@@ -312,7 +314,7 @@ section {
 .section-sobre{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-between;/*Forma de espaçamento da propriedade flex*/
   align-items: center;
   margin-top: 2%;
 }
@@ -323,17 +325,18 @@ section {
   width: 350px;
   position: relative;
   display: inline-block;
-  padding: 30px; /* espaçamento da borda */
+  padding: 30px;
   border-radius: 20px;
   overflow: hidden;
-  background: var(--default-dark-blue); /* fundo escuro atrás da imagem */
+  background: var(--default-dark-blue); 
   z-index: 0;
   box-shadow: #ffffff96 0px 0px 20px 0.5px;
 }
 
-.logo-sobre::before{
-  content: "";
-  position: absolute;
+.logo-sobre::before{/*Cria um elemento virtual que é inserido antes do conteúdo real de um elemento HTML, sem precisar alterar o HTML, é usado para adicionar elementos visuais extras, decorações, camadas ou efeitos sem alterar o conteúdo original.*/
+  content: "";  /* Cria um pseudo-elemento vazio antes do conteúdo do .logo-sobre */
+  position: absolute;  /* Posiciona este pseudo-elemento de forma absoluta em relação ao contêiner pai 
+     que deve ter position relative ou similar para servir de referência */
   top: 0;
   left: 0;
   right: 0;
@@ -341,6 +344,7 @@ section {
   padding: 3px;
   width: 200%;
   height: 200%;
+  /*È a borda da logo*/
   background: repeating-linear-gradient(
     120deg,
     var(--default-orange),
@@ -349,21 +353,26 @@ section {
     var(--default-green) 10%,
     var(--default-pink) 10%,
     var(--default-yellow) 15%
-  );
+  );  /* Aplica um gradiente linear repetido com várias cores, em um ângulo de 120 graus.
+     As cores se alternam em faixas de 5% a 15%, criando um padrão listrado colorido */
   background-size: 300% 300%;
-  animation: border-flow 20s linear infinite;
+  animation: border-flow 20s linear infinite; /* Aplica a animação chamada 'border-flow' que dura 20 segundos,
+     com velocidade constante (linear), e que se repete infinitamente */
   border-radius: 20px;
-  z-index: -1;
+  z-index: -1; /* Posiciona o pseudo-elemento atrás do conteúdo real do .logo-sobre,
+     garantindo que ele funcione como uma camada decorativa de fundo */
 }
 
-.logo-sobre::after{
-  content: "";
+.logo-sobre::after{/*Cria um elemento virtual que é inserido depois do conteúdo real de um elemento HTML, sem precisar mexer no HTML.*/
+  content: "";/* Cria um pseudo-elemento vazio que será inserido **depois** do conteúdo do .logo-sobre */
   position: absolute;
   top: 8px;
   left: 8px;
   right: 8px;
   bottom: 8px;
-  background: #111;
+  /* Define que o pseudo-elemento fique com uma margem interna de 8px em relação 
+     às bordas do elemento pai, criando um "recorte" menor dentro da área do .logo-sobre */
+  background: var(--default-dark-blue);
   border-radius: 15px;
   z-index: 1;
 }
@@ -377,6 +386,12 @@ section {
 }
 
 /* Animação de deslocamento do gradiente */
+/*Define uma animação chamada border-flow que altera a posição do background de um elemento ao longo do tempo.
+No início da animação (0%), o fundo está posicionado em 100% horizontalmente e 50% verticalmente — isso significa que o fundo está deslocado totalmente para a direita.
+No final da animação (100%), o fundo está posicionado em 0% horizontalmente e 50% verticalmente — ou seja, o fundo está alinhado à esquerda.
+Como resultado, o fundo (geralmente um gradiente ou imagem de padrão) parece deslizar da direita para a esquerda.
+Essa animação é contínua, dando efeito de movimento fluido e infinito quando combinada com animation-iteration-count: infinite
+*/
 @keyframes border-flow {
   0% {
     background-position: 100% 50%;
@@ -396,7 +411,7 @@ section {
 .section-jogos{
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: wrap;/*Elemento felxícel pode ser quebrado*/
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -415,17 +430,16 @@ section {
 }
 
 game-card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-10px);/*Mode o elemento para baixo*/
 }
 
 .demo-game{
   width: 100%;
   height: 100%;
-  background-size: cover;
-  background-position: center;
-  background-size: cover;
-  transition: transform 0.3s ease;
-  background-image: url('assets/images/jogos/DemoGame.jpg');
+  background-size: cover;/*Faz com que a imagem de fundo cubra toda a área do elemento, mantendo sua proporção original sem distorcer*/
+  background-position: center;/*Centraliza a imagem de fundo horizontal e verticalmente dentro do elemento.*/
+  transition: transform 0.3s ease;/*Define uma transição suave para a propriedade transform.Duração: 0.3s, tipo de aceleração: ease, que começa devagar, acelera no meio e desacelera no fim*/
+  background-image: url('assets/images/jogos/DemoGame.jpg');/*Importa a imagem*/
 }
 
 .demo-game2{
@@ -433,7 +447,6 @@ game-card:hover {
   height: 100%;
   background-size: cover;
   background-position: center;
-  background-size: cover;
   transition: transform 0.3s ease;
   background-image: url('assets/images/jogos/DemoGame2.jpg');
 }
@@ -443,7 +456,6 @@ game-card:hover {
   height: 100%;
   background-size: cover;
   background-position: center;
-  background-size: cover;
   transition: transform 0.3s ease;
   background-image: url('assets/images/jogos/DemoGameRemastered.jpg');
 }
@@ -453,7 +465,6 @@ game-card:hover {
   height: 100%;
   background-size: cover;
   background-position: center;
-  background-size: cover;
   transition: transform 0.3s ease;
   background-image: url('assets/images/jogos/DemoGameFinale.jpg');
 }
@@ -464,12 +475,11 @@ game-card:hover {
   left: 0;
   background-color: var(--default-yellow);
   color: var(--default-dark-blue);
-  padding: 20px;
   margin: auto;
   width: 100%;
   height: 70%;
   transition: transform 0.3s ease;
-  transform: translateY(80%);
+  transform: translateY(80%);/*Move o elemento para baixo*/
   display: inline;
   padding: 10px 20px;
 }
@@ -486,7 +496,7 @@ game-card:hover {
 }
 
 .game-card:hover .card-content {
-  transform: translateY(0);
+  transform: translateY(0);/*Quando passado o mouse em cima, volta a posição zero*/
 }
 
 .game-button{
@@ -522,8 +532,8 @@ game-card:hover {
 }
 
 #ranking-table{
-  border-collapse: collapse;
-  margin: auto;
+  border-collapse: collapse;/*Junta todas as bordas das linhas da coluna*/
+  margin: auto;/*Centraliza o texto*/
   font-weight: bold;
   height: 35px;
   cursor: pointer;
@@ -536,16 +546,16 @@ game-card:hover {
   height: 30px
 }
 
-#ranking-table thead tr:first-child th:last-child {
-  border-top-right-radius: 15px;
+#ranking-table thead tr:first-child th:last-child {/*Seleciona o último <th> (célula de cabeçalho) da primeira linha da <thead> da tabela.*/
+  border-top-right-radius: 15px;/*Aplica um arredondamento*/
 }
 
-#ranking-table  thead tr:first-child th:first-child {
-  border-top-left-radius: 15px;
+#ranking-table  thead tr:first-child th:first-child {/*Seleciona o primeiro <th> (célula de cabeçalho) da primeira linha da <thead> da tabela.*/
+  border-top-left-radius: 15px;/*Aplica um arredondamento*/
 }
 
 .table-number{
-  color: #00c8a0;
+  color: var(--default-green);
 }
 
 .header-player{
@@ -561,7 +571,7 @@ td{
   padding: 20px;
   border: var(--default-green) 0.5px solid;
   font-weight: bold;
-  vertical-align: middle;
+  vertical-align: middle;/*Alinha verticalmente o elemento da tabela*/
 }
 
 .text-table-header{
@@ -657,18 +667,18 @@ td{
 
 .container-wave-animation {
   display: flex;
-  gap: 8px;
+  gap: 8px;/*Define um espaçamento fixo de 8 pixels entre os itens filhos diretos de um contêiner com display flex*/
 }
 
 .bar {
   width: 1px;
   background: var(--default-pink);
-  animation: wave 7s infinite ease-in-out;
+  animation: wave 7s infinite ease-in-out;/*Chama a animação setada no tempo de 7s, que vai se repetir para sempre, definindo a curva de velocidade, comecando devagar, acelerando no meio, e terminando devagar*/
   transform-origin: center; /* aqui é a mudança */
   border-radius: 2px;
 }
 
-    /* Cada barra começa em um tempo diferente */
+/* Define delays personalizados para a animação de cada uma das barras da classe .bar, criando um efeito de onda contínua. */
 .bar:nth-child(1) { animation-delay: 0s; }
 .bar:nth-child(2) { animation-delay: 0.5s; }
 .bar:nth-child(3) { animation-delay: 1s; }
@@ -679,10 +689,10 @@ td{
 .bar:nth-child(8) { animation-delay: 3.5s; }
     
 @keyframes wave {
-  0%, 100% {
+  0%, 100% {;/*No início (0%) e no fim (100%), o elemento será encolhido verticalmente a apenas 20% da sua altura original.*/
     transform: scaleY(0.2)
   }
-  50% {
+  50% {/*No meio da animação (50%), o elemento é esticado para 80% da altura original.*/
     transform: scaleY(0.8);
   }
 }
@@ -704,12 +714,13 @@ td{
   width: 150px;
   height: 150px;
   margin: 0 auto;
-  animation: girar 15s linear infinite;
-  transform-origin: center;
+  animation: spin 15s linear infinite;/*Chama a animação setada, em 15s, na velocidade linear e infinita*/
+  transform-origin: center;/*Quando você usa transform (como scale, rotate, translate), o navegador precisa saber a partir de onde aplicar essa transformação, com transform-origin: center;, a transformação será aplicada a partir do centro exato do elemento (horizontal e vertical), Isso afeta como e em que direção o elemento será transformado.*/
   border-radius: 50%;
 }
 
-@keyframes girar {
+/*A animação do grafico irá girá-lo 360 graus, do ponto 0 ao 100*/
+@keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
@@ -730,7 +741,6 @@ td{
   width: 15px;
   height: 15px;
   border-radius: 3px;
-  
 }
 
 .title-graph{
@@ -770,7 +780,7 @@ td{
 
 .btn-img.active{
    box-shadow:#ffffff96 0px 0px 20px 5px;
-   transition: box-shadow 0.2s ease-in-out ;
+   transition: box-shadow 0.2s ease-in-out;/*Aplica de forma suave uma borda ao elemento*/
 }
 
 .btn-img .demo-game{
@@ -793,8 +803,7 @@ td{
   display: none;
   width: 100%;
   margin-bottom: 10%;
-  border-collapse: separate; /* IMPORTANTE! */
-  border-spacing: 0;
+  border-spacing: 0;/*Define o espaçamento do elemento até sua borda*/
   border: 2px solid var(--default-pink);
   border-radius: 12px;
   overflow: hidden;
@@ -852,10 +861,9 @@ td{
 .footer span{
   padding: 20px 100px 20px 100px ;
   font-size: 0.8em;
-  
 }
 
-.border-decoration{
+.border-decoration{/*Uma decoração na borda do inicio da linha, e do seu final*/ 
   border-inline-start: #ffffff 1px solid;
   border-inline-end: #ffffff 1px solid;
 }
