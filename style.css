@@ -68,7 +68,7 @@ section {
 }
 
 .logo{
-  padding-left: 15%;
+  padding-left: 12%;
   height: 150px;
   width: 300px;
 }
@@ -76,7 +76,7 @@ section {
 .menu-btn {
   position: fixed;/*Define que o elemento fique fixo na tela, independente de sua rolagem */
   top: 40px;
-  right: 300px;
+  right: 20%;
   width: 75px;
   height: 70px;
   cursor: pointer;
@@ -689,7 +689,7 @@ td{
 .bar:nth-child(8) { animation-delay: 3.5s; }
     
 @keyframes wave {
-  0%, 100% {;/*No início (0%) e no fim (100%), o elemento será encolhido verticalmente a apenas 20% da sua altura original.*/
+  0%, 100% {/*No início (0%) e no fim (100%), o elemento será encolhido verticalmente a apenas 20% da sua altura original.*/
     transform: scaleY(0.2)
   }
   50% {/*No meio da animação (50%), o elemento é esticado para 80% da altura original.*/
