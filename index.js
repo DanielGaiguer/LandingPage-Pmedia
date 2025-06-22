@@ -33,27 +33,30 @@ function showTab(tabId) {
     if (button.textContent.toLocaleLowerCase() === tabId) {;//Compara se o botão rodado no forEach, for o mesmo do chamado
       let textButton = button.textContent.toLocaleLowerCase();
       
-      addStyleButtons(button, tabId);
-      animationWriter(textButton, button);
+      addStyleButtons(button, tabId);//Chama a função que irá adicionar o CSS aos botoões 
+      animationWriter(textButton, button);//Chama a função que fará ma animação que simula o elemento sendo digitado
     }
   });
 }  
 
+//Irá jogar uma animação que simula o elemento sendo digitado
 function animationWriter(textButton, button){
     button.textContent = ''; // Limpa o texto do botão antes de começar a animação
+    
     // Adiciona cada letra com um atraso
-   for (let i = 0 ; i < textButton.length ; i++) {
-      setTimeout(() => {
+   for (let i = 0 ; i < textButton.length ; i++) {//Para cada roda do for, uma letra é adicionada, partindo da quantidade de caracteres do texto do botão
+      setTimeout(() => {//Seta o intervalo para a digitação
         if (i === 0) {
           button.textContent += textButton[i].toUpperCase(); // Primeira letra em maiúscula
         }else {
           button.textContent += textButton[i];
         }
-      }, 100 * i);
+      }, 100 * i);//Tempo de intervalo
     }
 }
 
 function addStyleButtons(button, tabId) {
+  //Verifica o Id da função, filtra e joga suas respectivas classes
   if (tabId === 'jogos') {
     button.classList.add('active');
     button.classList.add('jogos');
@@ -73,9 +76,9 @@ function addStyleButtons(button, tabId) {
 }
 
 
-const lines = document.querySelectorAll('#ranking-table tr');
-lines.forEach(line => {
-  line.addEventListener('click', () => {
+const lines = document.querySelectorAll('#ranking-table tr');//Seleciona as linhas da tabela
+lines.forEach(line => {//Irá rodar todas as linhas
+  line.addEventListener('click', () => {//Adiciona o evento de click para as linhas
     // Remove a classe 'selected' de todas as linhas
     lines.forEach(l => l.classList.remove('selected'));
     
@@ -84,22 +87,23 @@ lines.forEach(line => {
   });
 });
 
+//Essa função irá servir para mostrar o conteúdo da tabela, e adicionar o CSS ao botão
 function showTabVersoes(btnId, tableId){
   const buttons = document.querySelectorAll('.btn-img');
 
   buttons.forEach(button => {
-    button.classList.remove('active');
+    button.classList.remove('active');//Remove a classe active de todos os botões
   });
 
   const tables = document.querySelectorAll('.tabVersoes');
 
   tables.forEach(tab => {
-    tab.classList.remove('active');
+    tab.classList.remove('active');//Remove a classe active de todas as tabelas, escondendo-as
   });
   
-  const button = document.getElementById(btnId);
-  button.classList.add('active');
+  const button = document.getElementById(btnId);//Vai selecionar apenas aquele botão com o seu respectivo Id, setado na chamada da função
+  button.classList.add('active');//Adiciona a classe active a ele
 
-  const table = document.getElementById(tableId);
-  table.classList.add('active');
+  const table = document.getElementById(tableId);//Vai selecionar apenas aquela tabela com o seu respectivo Id, setado na chamada da função
+  table.classList.add('active');//Adiciona a classe active a ela
 }
