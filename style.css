@@ -229,7 +229,7 @@ section {
   border-bottom: 0px solid;
 }
 
-.tab-button.versoes{
+.tab-button.versões{
   color: var(--default-pink);
   border: var(--default-pink) 3px solid;
   border-bottom: 0px solid;
@@ -251,7 +251,7 @@ section {
   background-color: var(--default-orange);
 }
 
-.tab-button.versoes.active {
+.tab-button.versões.active {
   background-color: var(--default-pink);
 }
 
@@ -267,7 +267,7 @@ section {
   background-color: var(--default-orange);
 }
 
-.tab-content.active#versoes {
+.tab-content.active#versões {
   background-color: var(--default-pink);
 }
 

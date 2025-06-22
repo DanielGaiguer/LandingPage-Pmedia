@@ -9,30 +9,29 @@ function toggleMenu() {
 
 function showTab(tabId) {
   // Esconde todo conteúdo das abas, removendo a classe 'active', onde a unica diferenca e o display que era 'block' e agora passa a ser 'none'
-  document.querySelectorAll('.tab-content').forEach(function(content) {
+  document.querySelectorAll('.tab-content').forEach(function(content) {//Irá rodar todos os elementos com a classe tab-content, e irá retirar a classe active de todos
     content.classList.remove('active');
   });
 
   // Remove destaque de todos os botões
-  document.querySelectorAll('.tab-button').forEach(function(button) {
+  document.querySelectorAll('.tab-button').forEach(function(button) {//A mesma situação, com o botão
     button.classList.remove('active');
   });
 
   // Remove a classe 'active' de todas as tabelas, escondendo-as inicialmente
-  document.querySelectorAll('.tab-content').forEach(function(tab) {
+  document.querySelectorAll('.tab-content').forEach(function(tab) {//A mesma situação, com o conteúdo
     tab.classList.remove('active');
   });
 
 
   // Mostra a aba clicada
-  document.getElementById(tabId).classList.add('active');
+  document.getElementById(tabId).classList.add('active');//Irá jogar a classe active, mostando o conteúdo
 
   // Adiciona classe ativa no botão clicado
   const buttons = document.querySelectorAll('.tab-button');
   buttons.forEach(button => {
-    if (button.textContent.toLowerCase() === tabId) {
+    if (button.textContent.toLocaleLowerCase() === tabId) {;//Compara se o botão rodado no forEach, for o mesmo do chamado
       let textButton = button.textContent.toLocaleLowerCase();
-      button.classList.add('active');
       
       addStyleButtons(button, tabId);
       animationWriter(textButton, button);
@@ -67,9 +66,9 @@ function addStyleButtons(button, tabId) {
     button.classList.add('active');
     button.classList.add('perfil');
   }
-  if (tabId === 'versoes') {
+  if (tabId === 'versões') {
     button.classList.add('active');
-    button.classList.add('versoes');
+    button.classList.add('versões');
   }
 }
 
