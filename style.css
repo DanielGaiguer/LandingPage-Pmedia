@@ -406,6 +406,7 @@ Essa animação é contínua, dando efeito de movimento fluido e infinito quando
   padding-right: 6%;
   text-align: justify;
   font-size: 1.2em;
+  font-family: Biryani-regular;
 }
 
 .section-jogos{
@@ -873,4 +874,224 @@ td{
   background-color: #ffffff;
   font-size: 1px;
   margin-bottom: 1.5%;
+}
+
+/*Responsividade com celulares*/
+@media (max-width: 768px) {
+  .logo{
+    width: 200px;
+    height: 120px;
+  }
+
+  .menu-btn {
+    top: 30px;
+    right: 20%;
+  }
+
+  main{
+    width: 450px;
+  }
+
+  .sidebar a {
+    font-size: 0.7em;
+  }
+
+  .title{
+    font-size: 25px;
+  }
+  
+  .tab-button {
+    width: 65px;
+    height: 30px;
+    padding: 4px;
+    margin-right: 10px;
+    font-size: 10px;
+  }
+
+  .tab-content{
+    font-size: 0.9em;
+  }
+
+  .tab-button:hover{
+    font-size: 11px;
+  }
+
+  .tab-button.active {
+    font-size: 11px;
+  }
+
+  .section-sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2%;
+  }
+
+  .logo-sobre{
+    height: 80px;
+    width: 250px;
+  }
+
+  .text-sobre{
+    width: 90%;
+    padding-top: 5%;
+    font-size: 1em;
+  }
+
+  .first-image-profile{
+    height: 80px;
+    width: 80px;
+  }
+
+  .image-profile{
+    height: 50px;
+    width: 50px;
+  }
+
+  td{
+    padding: 10px;
+    font-size: 0.8em;
+  }
+
+  .perfil-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+  }
+
+  .perfil-text{
+    width: 90%;
+    text-align: justify;
+  }
+
+  .perfil-card{
+    width: 100%;
+  }
+
+  .container-player{
+    width: 90%;
+    flex-direction: row;
+  }
+
+  .perfil-img{
+    border-radius: 50%;
+    height: 90px;
+    padding: 20px;
+    margin-top: 10px;
+  }
+
+  .card-perfil-img{
+    display: block;
+    height: 100px;
+    width: 100px;
+  }
+
+  .player-info{
+    display: block;
+    width: 40%;
+    height: 10%;
+    margin-top: 15%;
+    margin-left: 10%;
+  }
+
+  .title-player{
+    font-size: 0.8em;
+    font-family: Biryani-Bold;
+    font-weight: normal;
+    display: block;
+    margin: 5px;
+  }
+
+  .container-wave-animation {
+    display: none;
+  }
+
+  .legend-graph {
+    gap: 10px;
+  }
+
+  .player-graph{
+    margin-top: 20px;
+  }
+
+  .pie {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .caption {
+    width: 50%;
+  }
+  
+  .game-button{
+    height: 60px;
+    width: 150px;
+    font-size: 1.0em;
+    margin-top: 25px;
+  }
+
+  .game-button:hover{
+    height: 65px;
+    width: 160px;
+    font-size: 1.1em;
+  }
+
+  .listing-rankings-player h3{
+    margin-top:15px;
+    font-size: 0.9em;
+  }
+
+  .buttons-versoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 16px;
+  }
+
+  .tabVersoes {
+    font-size: 14px;
+    border-collapse: collapse;
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .tabVersoes th,
+  .tabVersoes td {
+    padding: 6px 8px;
+    text-align: left;
+    word-break: break-word;
+  }
+
+  .title-tab-game,
+  .data-tab-game {
+    font-size: 14px;
+  }
+
+  .version-number {
+    font-size: 13px;
+    word-break: break-word;
+  }
+
+  .version-data {
+    font-size: 13px;
+    white-space: nowrap;
+    min-width: 100px;
+  }
+
+  .dotted-line {
+    display: none; /* Esconde a linha tracejada */
+  }
+
+  .footer span{
+    padding:  25px 15px 20px 15px;
+    font-size: 0.8em;
+  }
+
+  .whiteFineLineFooter{
+    display: block;
+    background-color: #ffffff;
+    font-size: 1px;
+    margin-bottom: 4.5%;
+  }
 }
