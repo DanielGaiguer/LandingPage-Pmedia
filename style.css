@@ -278,7 +278,7 @@ section {
 
 .feature-text {
   text-align: justify;
-  font-size: 0.8em;
+  font-size: 1em;
   margin: auto;
   display: block;
   width: 55%;
@@ -912,6 +912,10 @@ td{
     font-size: 0.9em;
   }
 
+  .feature-text{
+    font-size: 0.85em
+  }
+
   .tab-button:hover{
     font-size: 11px;
   }
@@ -1093,5 +1097,15 @@ td{
     background-color: #ffffff;
     font-size: 1px;
     margin-bottom: 4.5%;
+  }
+}
+
+/*Responsividade com Tablets*/
+@media (max-width: 1030px){
+  body{
+    margin: 15px;
+  }
+  .dotted-line {
+    display: none; /* Esconde a linha tracejada */
   }
 }
