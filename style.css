@@ -885,10 +885,11 @@ td{
 
   .menu-btn {
     top: 30px;
+    right: 15%;
   }
 
   main{
-    width: 450px;
+    width: 90vw;
     margin: auto;
   }
 
@@ -913,7 +914,7 @@ td{
   }
 
   .feature-text{
-    font-size: 0.85em
+    font-size: 0.8em
   }
 
   .tab-button:hover{
@@ -1096,7 +1097,7 @@ td{
     display: block;
     background-color: #ffffff;
     font-size: 1px;
-    margin-bottom: 4.5%;
+    margin-bottom: 5%;
   }
 }
 
