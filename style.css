@@ -881,7 +881,6 @@ td{
   .logo{
     width: 200px;
     height: 120px;
-    background-color: red;
   }
   .menu-btn {
     top: 30px;
@@ -894,6 +893,7 @@ td{
 
   .sidebar a {
     font-size: 0.7em;
+    background-color: red;
   }
 
   .title{
