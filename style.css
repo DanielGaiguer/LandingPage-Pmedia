@@ -77,8 +77,8 @@ section {
   position: fixed;/*Define que o elemento fique fixo na tela, independente de sua rolagem */
   top: 40px;
   right: 20%;
-  width: 75px;
-  height: 70px;
+  width: 15%;
+  height: 12%;
   cursor: pointer;
   z-index: 1100;/*Define que o elemento fique acima dos elementos da página */
 }
@@ -897,7 +897,7 @@ td{
   }
 
   main{
-    width: 90vw;
+    width: 95vw;
     margin: 15px;
   }
 
@@ -1065,7 +1065,7 @@ td{
   .tabVersoes {
     font-size: 14px;
     border-collapse: collapse;
-    width: 100%;
+    width: 90%;
     overflow-x: auto;
   }
 
