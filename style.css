@@ -885,18 +885,8 @@ td{
 
   .menu-btn {
     top: 30px;
-    right: 15%;
   }
   
-  .whiteLine{
-    width: 100%;
-  }
-
-  main{
-    width: 100%;
-    margin: 15px;
-  }
-
   .sidebar a {
     font-size: 0.7em;
   }
