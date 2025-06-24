@@ -877,11 +877,12 @@ td{
 }
 
 /*Responsividade com celulares*/
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .logo{
     width: 200px;
     height: 120px;
   }
+
   .menu-btn {
     top: 30px;
   }
