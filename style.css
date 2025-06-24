@@ -81,6 +81,7 @@ section {
   height: 70px;
   cursor: pointer;
   z-index: 1100;/*Define que o elemento fique acima dos elementos da página */
+  background-color: var(--default-dark-blue);
 }
 
 .menu-btn div {
