@@ -889,11 +889,11 @@ td{
   }
 
   header{
-    width: 90vw;
+    width: 95vw;
   }
 
   .whiteLine{
-    width: 90vw;
+    width: 95vw;
   }
 
   main{
@@ -924,7 +924,7 @@ td{
   .feature-text{
     font-size: 0.8em
   }
-  
+
   .tab-button:hover{
     font-size: 11px;
   }
