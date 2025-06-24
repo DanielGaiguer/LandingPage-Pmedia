@@ -878,16 +878,16 @@ td{
 
 /*Responsividade com celulares*/
 @media (max-width: 768px) {
-  header{
-    width: 95vw;
-  }
-
-  footer{
-    width: 95vw;
-  }
   .logo{
     width: 200px;
     height: 120px;
+  }
+
+  .whiteLine{
+    display: block;
+    background-color: #ffffff;
+    font-size: 6px;
+    width: 5000px;
   }
 
   .menu-btn {
