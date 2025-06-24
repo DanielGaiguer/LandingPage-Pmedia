@@ -888,6 +888,14 @@ td{
     right: 15%;
   }
 
+  header{
+    width: 90vw;
+  }
+
+  .whiteLine{
+    width: 90vw;
+  }
+
   main{
     width: 90vw;
     margin: auto;
