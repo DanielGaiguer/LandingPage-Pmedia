@@ -880,7 +880,7 @@ td{
 @media (max-width: 768px) {
   .whiteLine{
     display: block;
-    background-color: #ffffff;
+    background-color: red;
     font-size: 6px;
     width: 150%;
   }
