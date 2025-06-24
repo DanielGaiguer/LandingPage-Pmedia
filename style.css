@@ -925,6 +925,10 @@ td{
     font-size: 0.8em
   }
 
+  #ranking-table{
+    width: 90%;
+  }
+
   .tab-button:hover{
     font-size: 11px;
   }
