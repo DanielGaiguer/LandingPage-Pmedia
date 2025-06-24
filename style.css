@@ -878,13 +878,6 @@ td{
 
 /*Responsividade com celulares*/
 @media (max-width: 768px) {
-  .whiteLine{
-    display: block;
-    background-color: red;
-    font-size: 6px;
-    width: 150%;
-  }
-
   .logo{
     width: 200px;
     height: 120px;
@@ -894,7 +887,7 @@ td{
   }
 
   main{
-    width: 90vw;
+    width: 450px;
     margin: auto;
   }
 
