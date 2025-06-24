@@ -56,7 +56,7 @@ header{
   position: sticky;/*Ele é uma mistura de relative e fixed, funciona como relative até alcançar o ponto definido top: 0 Depois, se comporta como fixed, grudando na posição indicada enquanto o usuário continua rolando a página. */
   top: 0;/*Define a distância entre o elemento até o topo da tela ou contêiner*/
   left: 0;/*Define a distância entre o elemento até o lado esquerdo da tela ou contêiner*/
-  width: 94vw;
+  width: 100vw;
   background-color: var(--default-dark-blue);
   z-index: 1000; /*Define a ordem de empilhamento dos elementos da página, a profundidade deles, o eixo-z, ou seja, esta propriedade garante que o header ficará acima de todos os elementos da página*/
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /*Sombreamento do elemento*/
