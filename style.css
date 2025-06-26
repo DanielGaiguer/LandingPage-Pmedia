@@ -859,7 +859,7 @@ td{
   text-align: center;
 }
 
-.footer div{
+.footer span{
   padding: 20px 100px 20px 100px ;
   font-size: 0.8em;
 }
@@ -950,6 +950,11 @@ td{
   td{
     padding: 10px;
     font-size: 0.8em;
+  }
+
+  #rankings-section{
+    width: 450px;
+    margin: auto;
   }
 
   .perfil-container{
@@ -1043,6 +1048,8 @@ td{
   .buttons-versoes {
     display: flex;
     flex-wrap: wrap;
+    width: 400px;
+    margin: auto;
     gap: 8px;
     justify-content: center;
     margin-bottom: 16px;
@@ -1051,8 +1058,8 @@ td{
   .tabVersoes {
     font-size: 14px;
     border-collapse: collapse;
-    width: 90%;
     overflow-x: auto;
+    margin: auto;
   }
 
   .tabVersoes th,
@@ -1082,7 +1089,8 @@ td{
     display: none; /* Esconde a linha tracejada */
   }
 
-  .footer div{
+  .footer span{
+    display: block;
     padding:  3% 3% 2% 3%;
     font-size: 0.8em;
   }
